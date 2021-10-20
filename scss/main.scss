@@ -1,0 +1,26 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 5%;
+}
+
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/line";
+@import "blocks/experience";
+@import "blocks/skills";
+@import "blocks/footer";
+@import "blocks/response";

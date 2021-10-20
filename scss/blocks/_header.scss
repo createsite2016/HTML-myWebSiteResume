@@ -1,0 +1,25 @@
+.header {
+  margin-top: 100px;
+  display: inline-flex;
+  &-logo {
+    width: 150px;
+    height: 150px;
+  }
+  &-menu {
+    margin-left: 44em;
+    padding-left: 4em;
+    margin-top: -100px;
+    padding-top: 100px;
+    width: 300px;
+    background: left 2% top 65% no-repeat url(../img/line_menu.png);
+    &__link {
+      color: #000;
+      padding-right: 19px;
+      text-decoration: none;
+      z-index: 1;
+      &:hover {
+        font-weight: 900;
+      }
+    }
+  }
+}

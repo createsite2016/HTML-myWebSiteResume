@@ -1,0 +1,40 @@
+.about {
+  display: inline-flex;
+  &-text_block {
+    &-title {
+      padding-top: 40px;
+      font-weight: bold;
+      font-size: 36px;
+    }
+    &-text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      width: 560px;
+    }
+  }
+  &-contact_block {
+    padding-top: 60px;
+    display: block;
+    width: 130px;
+    margin-left: 21em;
+    &__link {
+      display: block;
+      font-size: 14px;
+      line-height: 140%;
+      color: #000;
+      padding-bottom: 10px;
+      text-decoration: none;
+    }
+    &-icons {
+      &__link {
+        text-decoration: none;
+        padding-right: 20px;
+      }
+      &__icon {
+        width: 25px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
