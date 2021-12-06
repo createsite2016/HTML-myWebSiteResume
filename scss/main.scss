@@ -5,6 +5,11 @@ body {
 html {
   --scroll-behavior: smooth;
   scroll-behavior: smooth;
+  cursor: url('../img/cursor/cursor.png'), default;
+}
+
+a {
+  cursor: url('../img/cursor/click.png'), pointer;
 }
 
 p {
@@ -17,6 +22,7 @@ p {
   padding-left: 5%;
 }
 
+@import "blocks/glitch";
 @import "blocks/header";
 @import "blocks/about";
 @import "blocks/line";

@@ -6,6 +6,11 @@ body {
 html {
   --scroll-behavior: smooth;
   scroll-behavior: smooth;
+  cursor: url("../img/cursor/cursor.png"), default;
+}
+
+a {
+  cursor: url("../img/cursor/click.png"), pointer;
 }
 
 p {
@@ -16,6 +21,170 @@ p {
   width: 1170px;
   margin: 0 auto;
   padding-left: 5%;
+}
+
+.glitch {
+  color: black;
+  font-size: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(47px, 9999px, 60px, 0);
+  }
+  5% {
+    clip: rect(83px, 9999px, 49px, 0);
+  }
+  10% {
+    clip: rect(27px, 9999px, 54px, 0);
+  }
+  15% {
+    clip: rect(91px, 9999px, 38px, 0);
+  }
+  20% {
+    clip: rect(6px, 9999px, 6px, 0);
+  }
+  25% {
+    clip: rect(1px, 9999px, 13px, 0);
+  }
+  30% {
+    clip: rect(33px, 9999px, 25px, 0);
+  }
+  35% {
+    clip: rect(92px, 9999px, 35px, 0);
+  }
+  40% {
+    clip: rect(97px, 9999px, 40px, 0);
+  }
+  45% {
+    clip: rect(19px, 9999px, 9px, 0);
+  }
+  50% {
+    clip: rect(69px, 9999px, 95px, 0);
+  }
+  55% {
+    clip: rect(47px, 9999px, 11px, 0);
+  }
+  60% {
+    clip: rect(50px, 9999px, 65px, 0);
+  }
+  65% {
+    clip: rect(41px, 9999px, 65px, 0);
+  }
+  70% {
+    clip: rect(19px, 9999px, 50px, 0);
+  }
+  75% {
+    clip: rect(16px, 9999px, 39px, 0);
+  }
+  80% {
+    clip: rect(19px, 9999px, 78px, 0);
+  }
+  85% {
+    clip: rect(67px, 9999px, 57px, 0);
+  }
+  90% {
+    clip: rect(11px, 9999px, 46px, 0);
+  }
+  95% {
+    clip: rect(19px, 9999px, 71px, 0);
+  }
+  100% {
+    clip: rect(95px, 9999px, 74px, 0);
+  }
+}
+.glitch:after {
+  width: fit-content;
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 47px, 0);
+  }
+  5% {
+    clip: rect(30px, 9999px, 52px, 0);
+  }
+  10% {
+    clip: rect(59px, 9999px, 45px, 0);
+  }
+  15% {
+    clip: rect(100px, 9999px, 68px, 0);
+  }
+  20% {
+    clip: rect(25px, 9999px, 39px, 0);
+  }
+  25% {
+    clip: rect(43px, 9999px, 67px, 0);
+  }
+  30% {
+    clip: rect(54px, 9999px, 63px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 14px, 0);
+  }
+  40% {
+    clip: rect(54px, 9999px, 9px, 0);
+  }
+  45% {
+    clip: rect(11px, 9999px, 88px, 0);
+  }
+  50% {
+    clip: rect(7px, 9999px, 90px, 0);
+  }
+  55% {
+    clip: rect(41px, 9999px, 43px, 0);
+  }
+  60% {
+    clip: rect(14px, 9999px, 70px, 0);
+  }
+  65% {
+    clip: rect(83px, 9999px, 42px, 0);
+  }
+  70% {
+    clip: rect(8px, 9999px, 2px, 0);
+  }
+  75% {
+    clip: rect(3px, 9999px, 72px, 0);
+  }
+  80% {
+    clip: rect(71px, 9999px, 33px, 0);
+  }
+  85% {
+    clip: rect(9px, 9999px, 34px, 0);
+  }
+  90% {
+    clip: rect(35px, 9999px, 46px, 0);
+  }
+  95% {
+    clip: rect(6px, 9999px, 72px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 78px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 .header {
@@ -42,13 +211,14 @@ p {
 }
 .header-menu__link:hover {
   font-weight: 900;
+  padding-right: 15.7px;
 }
 
 .about {
   display: inline-flex;
 }
 .about-text_block-title {
-  padding-top: 40px;
+  margin-top: 40px;
   font-weight: bold;
   font-size: 36px;
 }
@@ -80,6 +250,11 @@ p {
   width: 25px;
   margin-top: 15px;
 }
+.about-contact_block-icons__icon:hover {
+  width: 30px;
+  margin-top: 10px;
+  margin-right: -5px;
+}
 
 .line-img {
   width: 1147px;
@@ -103,6 +278,7 @@ p {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 30px;
+  width: fit-content;
 }
 .experience-work-point {
   margin-top: 30px;
@@ -156,6 +332,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+  width: fit-content;
 }
 .experience-education-point {
   margin-top: 30px;
@@ -187,6 +364,7 @@ p {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+  width: fit-content;
 }
 .skills-items {
   display: flex;
