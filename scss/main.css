@@ -674,4 +674,54 @@ p {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/* если пользователь переключил тему на темную, отработает медиа-запрос: */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151313;
+  }
+  .header-menu__link {
+    color: #fff;
+  }
+  .glitch {
+    color: #fff;
+  }
+  .glitch:before {
+    color: white;
+    background: black;
+  }
+  .glitch:after {
+    color: white;
+    background: black;
+  }
+  .about {
+    color: #fff;
+  }
+  .about-contact_block__link {
+    color: #fff;
+  }
+  .experience-work-point__position {
+    color: white;
+  }
+  .experience-work-point__city {
+    color: white;
+  }
+  .experience-work-point__description {
+    color: white;
+  }
+  .experience-work-point__link {
+    color: white;
+  }
+  .experience-education-point {
+    color: white;
+  }
+  .experience-education-point__description {
+    color: white;
+  }
+  .skills {
+    color: white;
+  }
+  .footer {
+    color: white;
+  }
+
+}
