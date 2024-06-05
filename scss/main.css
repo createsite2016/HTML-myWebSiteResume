@@ -279,7 +279,7 @@ p {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 30px;
-  width: fit-content;
+  width: 210px;
 }
 @-moz-document url-prefix() {
   .experience-work__title {
